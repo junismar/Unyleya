@@ -1,0 +1,8 @@
+CREATE DATABASE EncurtadorURL;
+USE EncurtadorURL;
+CREATE TABLE url (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url_original VARCHAR(2500) NOT NULL,
+    url_curta VARCHAR(50) NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
